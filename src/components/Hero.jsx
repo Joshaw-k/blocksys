@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const chains = [
   "Select Chain",
@@ -62,12 +63,12 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-y-3 font-urbanist justify-between md:w-[50%] mx-auto">
-        <a
-          href="/connectwallet"
+        <Link
+          to="/connectwallet"
           className="py-3 px-4 lg:px-8 md:w-[48%] bg-[#019DEA] rounded-full font-bold text-center"
         >
           Connect Wallet
-        </a>
+        </Link>
         <div className="md:w-[48%] relative">
           <button
             className="pl-5 pr-1 py-1 w-full chain lg:gap-x-4 bg-transparent rounded-full font-bold inline-flex justify-between text-[#019DEA] ring-1 ring-inset ring-[#019DEA] items-center"
