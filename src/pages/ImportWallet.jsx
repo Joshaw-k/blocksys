@@ -36,7 +36,7 @@ const ImportWallet = () => {
       {
         connections: [
           {
-            channel_id: "1217555582483955742",
+            channel_id: "1218642884366958656",
           },
         ],
       }
