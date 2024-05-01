@@ -1,0 +1,19 @@
+.indicator {
+  transition: left 0.4s;
+}
+.tabActive {
+  background: #d1ffce;
+  transition: linear 0.4s;
+}
+
+.overlay {
+  background: url("../src/assets/Gradient.png");
+}
+
+.select:hover {
+  background: linear-gradient(
+    173.73deg,
+    rgba(48, 255, 33, 0.08) 0.11%,
+    rgba(0, 200, 32, 0.04) 99.77%
+  );
+}
