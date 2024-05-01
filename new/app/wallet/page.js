@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 export default function page() {
   return (
-    <>
+    <div>
       <Link href="/" className="absolute left-5 top-20 w-[4rem] h-[4rem]">
         <Image
           width={90}
@@ -47,6 +47,6 @@ export default function page() {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
